@@ -1,5 +1,5 @@
-# Partage ta fiche APP
 
+# Partage ta Fiche 
 
  Bonjour, vous voici sur la page officiel de l'application open source partage ta fiche. 
 
@@ -9,6 +9,13 @@ Cette application sera entierrement codé en node js car je n'ai pas beaucoup de
 
 Merci si vous lisez ces lignes et merci d'avance si vous pensez contribuer à ce projets 
 
-# Instruction 
 
-SOON 
+
+
+
+
+## Authors
+
+- [@faynix-code](https://github.com/Faynix-code)
+
+
