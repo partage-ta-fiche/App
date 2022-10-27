@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "minipass-fetch": "^2.1.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.2.10",
+    "node-localstorage": "^2.2.1",
+    "nodemailer": "^6.8.0",
+    "path": "^0.12.7",
+    "sendmail": "^1.6.1"
+  },
+  "name": "partage-ta-ficheapp",
+  "version": "1.0.0",
+  "description": "Application officiel Partage ta fiche ",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Etienne Maleville",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/partage-ta-fiche/Partage-Ta-FicheAPP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/partage-ta-fiche/Partage-Ta-FicheAPP/issues"
+  },
+  "homepage": "https://github.com/partage-ta-fiche/Partage-Ta-FicheAPP#readme",
+  "devDependencies": {}
+}

@@ -1,0 +1,36 @@
+.statsflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+   
+}
+body {
+    margin: 0 auto;
+}
+.recent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+}
+.recent .ficher {
+    width: 100%;
+}
+.users {
+    width: 100%;
+    height: auto; 
+}
+.fiche {
+    width: 100%;
+    height: auto; 
+}
+.conn {
+    width: 100%;
+    height: auto; 
+}

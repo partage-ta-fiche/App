@@ -1,0 +1,24 @@
+footer {
+    height: 1200px; 
+    width: 100%; 
+    background-color: #6F7DDE !important; 
+    
+    bottom:0;
+}
+.flexfoot {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo img {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+    
+}

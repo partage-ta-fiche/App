@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partager une fiche | Partage ta Fiche </title>
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="./asset/img/Logo.png" />
+    <!-- JS IMPORT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.map"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+     <script src="/asset/js/preview.js"></script>
+    <script src="/asset/js/basicimport.js"></script>
+    <script src="/asset/js/counter.js"></script>
+    <!-- CSS IMPORT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/asset/css/nav.css">
+    <link rel="stylesheet" href="/asset/css/main.css">
+    <link rel="stylesheet" href="/asset/css/post.css">
+    <!-- CSS RESPONSIVE -->
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="/asset/css/mobile/m.post.css" />
+</head>
+<body>
+    <nav id="nav"></nav>
+
+    <section class="main"> 
+
+        <div class="title centered">
+
+            <h1>Partager une fiche</h1>
+
+        </div>
+
+        <div class="post">
+            
+            <div class="upload">
+
+                <form action="/post/final" method="post" enctype="multipart/form-data" >
+
+                    <div><input type="file" onchange="handleFiles(files)" class="centered uploadfile" id="upload" simple accept="image/*" name="filefiche"></div> <br><br>
+                    <div><label for="upload"><span id="preview" class="preview"></span></label></div> <br><br>
+                    
+                  
+               
+                 </div>
+
+                 <div class="formdescription">
+                
+
+                    <div class="form">
+                        
+                        <input type="text" id="title" name="title" placeholder="Titre de la fiche"> <br><br>
+                        <input type="hidden"  name="author" value="<%= username %>  ">
+                        <input type="hidden" name="authorID" value="<%= userid %> ">
+                    </div>
+                    <div class="form">
+                       
+                        <textarea id="description" name="description" placeholder="Description de la fiche"></textarea>
+
+                    </div>
+
+
+                    <div class="form">
+                        <input type="submit" value="Partager" id="submit">
+                    </div>
+                </form>
+
+
+
+            </div>
+            
+
+
+
+        
+
+        </div>
+        
+
+
+
+    </section>
+
+    <footer id="footer"></footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+.connect {
+    width: 500px; 
+    height: 370px;
+    background-color: #6F7DDE;
+    border-radius: 25px;
+}
+
+.connect input {
+    width: 50%;
+    height: 50px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.connect .button {
+    background-color: #DA7ADE;
+}
+.minlink {
+    font-size: 18px;
+}

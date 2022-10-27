@@ -1,0 +1,10 @@
+.bigtitle {
+    font-size: 50px;
+}
+.nice {
+    background-color: rgb(125, 255, 125); 
+    width: 50%;
+    border-radius: 15px;
+    height: auto;
+    box-shadow: black 5px
+}

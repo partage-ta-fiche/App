@@ -1,0 +1,26 @@
+body {
+    background-color: #fafafa !important; 
+    font-family: 'Raleway', sans-serif;
+    color: black; 
+}
+a {
+    text-decoration: none;
+}
+.centered{
+    text-align: center;
+    display: block;
+    text-align: -webkit-center;
+    margin: 0 auto;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+/* Import Police  */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100&display=swap');
+

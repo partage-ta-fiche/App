@@ -1,0 +1,48 @@
+footer {
+    height: 700px; 
+    width: 100%; 
+    background-color: #6F7DDE !important; 
+    
+    bottom:0;
+}
+.flexfoot {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#date {
+    text-align: center;
+    text-decoration: none ;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+    
+
+}
+#date a {
+    text-decoration: none;
+    color: black;
+}
+.logo {
+    background-color: white; 
+    border-radius:  15px;
+}
+.title {
+    font-size: 45px;
+}
+.aboutp {
+    font-size: 30px;
+}
+.link {
+    font-size: 30px;
+
+}
+.link a {
+    text-decoration: none;
+    color: black;
+    
+}
+.link li {
+    list-style: none; 
+}
+/* Import Police  */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100&display=swap');

@@ -1,0 +1,6 @@
+.contactflex {
+    display: flex;
+    justify-content: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}

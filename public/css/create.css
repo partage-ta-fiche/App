@@ -1,0 +1,18 @@
+.form {
+    width: 50%;
+    height: 500px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #00000000;
+    background-color: #59dcfd96;
+    border-radius: 10px;
+}
+.form input {
+    width: 75%;
+    height: 50px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}

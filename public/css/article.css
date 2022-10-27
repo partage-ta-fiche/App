@@ -1,0 +1,39 @@
+.articlebox {
+    height: auto; 
+    width: 50%;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #3a41fc;
+}
+.form input {
+    width: 50%; 
+    height: 50px;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    border: none; 
+    text-decoration: none;
+    font-size: 25px ;
+
+    
+}
+.form .submit {
+
+    background-color: #D0D404 ; 
+    box-shadow: black 50 px ;
+    text-transform: uppercase;
+
+}
+
+.flexarticle {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.articlecard {
+    text-align: center;
+    background-color: white; 
+    border-radius: 15px;
+    width: auto; 
+    height: auto; 
+}

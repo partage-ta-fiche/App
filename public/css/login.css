@@ -1,0 +1,39 @@
+body {
+    background-color: #19D4C1 ;
+}
+
+.login {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    height: auto; 
+    background-color: #7719D4 ;
+    box-shadow: black 5px; 
+
+    border-radius: 15px;
+}
+.form {
+    margin-left: auto;
+   margin-right: auto;
+   width: 300px;
+    
+}
+.form input {
+    width: 100%; 
+    height: 50px;
+    border-radius: 50px;
+    border: none; 
+    text-decoration: none;
+    font-size: 25px ;
+
+    
+}
+.form .submit {
+
+    background-color: #D0D404 ; 
+    box-shadow: black 50 px ;
+    text-transform: uppercase;
+
+}
+
+

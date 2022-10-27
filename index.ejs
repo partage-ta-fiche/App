@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partage ta fiche </title>
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="./asset/img/Logo.png" />
+    <!-- JS IMPORT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.map"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="/asset/js/basicimport.js"></script>
+    <script src="/asset/js/counter.js"></script>
+    <!-- CSS IMPORT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/asset/css/nav.css">
+    <link rel="stylesheet" href="/asset/css/main.css">
+    <link rel="stylesheet" href="/asset/css/index.css">
+    <!-- CSS RESPONSIVE -->
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="./asset/css/mobile/m.index.css" />
+
+
+
+
+
+
+    <!-- CSS -->
+
+    <meta name="description" content="Viens aider des milliers d'étudiants en partagant ta fiche de révision sur notre platforme et profite toi aussi des fiches de révision disponible grâce à un moteur de recherche puissant.">
+</head>
+<body>
+
+    
+
+    <nav id="nav"></nav>
+    <br><br><br><br>
+
+    <section class="stats">
+        <center>
+            <h1 class="maintitle">Bonjour et bienvenue sur <div class="degrade">Partage ta fiche</div> </h1>
+            <br><br>
+
+        </center>
+        <br>
+        <div class="statsflex">
+            <div class="users">
+                <img src="./asset/img/user.png" alt="Icon utilisateur " class="icon">
+                <h2>Il y a <div class="countu remis"><%= userNumber %> </div>  utilisateurs</h2>
+
+            </div>
+            <div class="fiche">
+                <img src="./asset/img/writing.png" alt="Icon fiche " class="icon">
+                <h2>Il y a <div class="countu remis"><%= ficheNumber %> </div> fiches</h2>
+
+            </div>
+            
+
+        </div>
+
+
+    </section>
+    <br><br><br><br>
+    <center>
+
+        
+    </center>
+
+    <h1 class="titlerecent centered">Dernières fiches publier : </h1>
+    <br><br><br><br>
+    <section class="fiches">
+
+        <div class="recent">
+            <% articles.forEach(function(articles) { %>
+              <div class="ficher">
+                <h2 class="titlefiche"><%= articles.title %> </h2>
+                <img src="/store/img/fiches/<%= articles.id %>.png " alt="Image fiche :  <%= articles.title %> " class="imagefiche centered" >
+                <br><br><br><br>
+                <div class="viewf">
+                    <a href="/view/fiche/?ficheid=<%= articles.id %> ">Voir la fiche </a>
+
+                </div>
+              </div>
+            <% }); %>
+
+        </div>
+          
+        
+        
+       
+        
+
+    </section>
+    <br><br><br><br>
+
+    <section class="article">
+        <h1 class="titlerecent centered">Derniers articles publiés : </h1>
+        <br><br>
+        
+            <div class="articleview">
+            <br><br>
+            <% article.forEach(article => { %>
+                <article>
+                    <div class="articlecard">
+                    <header><h1 class="titlearticle"><%= article.title %> </h1></header>
+                    <br>
+                    <p><%= article.desc %> </p>
+                    <div class="viewarticle"> 
+                        <a href="/view/article/?id=<%= article.id %> " class="centered"> Voir l'article </a> <br>
+                    </div>
+                </div>
+                </article>
+             
+            <% }) %>
+
+        </div>
+           
+    
+            
+    
+       
+
+
+
+       
+
+    </section>
+    <br><br><br><br><br><br>
+
+    <footer id="footer"></footer>
+
+    
+</body>
+</html>

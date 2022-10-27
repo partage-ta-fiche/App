@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partage ta fiche | Admin </title>
+    <link rel="stylesheet" href="/asset/css/mainer.css">
+    <link rel="stylesheet" href="/asset/css/maintenance.css">
+</head>
+<body>
+    
+    <div class="land"><img src="/asset/img/Logo.png" alt=""><h1>Partage ta fiche | Admin </h1></div>
+    <br><br><br><br>
+
+    
+    <br><br>
+
+    <section class="nav">
+        <div class="flexnav">
+            <div class="btnnav"><a href="/index.html">Accueil</a></div>
+            <div class="btnnav"><a href="">Modération Fiche</a></div>
+            <div class="btnnav"><a href="">Utilisateurs</a></div>
+            <div class="btnnav"><a href="/article.html">Article</a></div>
+            <div class="btnnav"><a href="/maintenance.html">Maintenance</a></div>
+
+
+        </div>
+
+    </section>
+    <br><br><br><br>
+
+    <section class="maintance">
+        <h1 class="center mtn">Maintenance</h1>
+
+        <div class="maintenancebox">
+            
+            <form action="/toktok" method="get" class="form">
+                <br><br>
+                <input type="text" placeholder="<%= typeof msg != 'undefined' ? title : '' %> " name="msg"> <br><br>
+               <span class="mintxt">Activer : </span>  <input type="checkbox" name="activer" id="" placeholder="Activer">
+               <input type="submit" value="Sauvgarder" class="btn submit">
+               <br><br>
+            </form>
+            
+
+        </div>
+
+    </section>
+    
+</body>
+</html>

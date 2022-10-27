@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez nous ! | Partage ta Fiche </title>
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="./asset/img/Logo.png" />
+    <!-- JS IMPORT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.map"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="./asset/js/basicimport.js"></script>
+    <script src="./asset/js/counter.js"></script>
+    <!-- CSS IMPORT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/nav.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/contact.css">
+    <!-- CSS RESPONSIVE -->
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="./asset/css/mobile/m.contact.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="nav"></nav>
+
+
+    <!-- CONTACT -->
+    <section class="main">
+
+        <div class="title centered">
+            <h1>Contactez nous ! </h1>
+            <br>
+            <h2 class="centered">Vous êtes intéressés par notre projet et vous souhaitez devenir partenaire de Partage ta Fiche ? <br>  Vous souhaitez simplement recevoir des informations sur le projet ? <br> Tous vos messages seront lus attentivement et nous vous répondrons dans un délai raisonnable </h2>
+            <br><br>
+        </div>
+
+        <div class="contactflex">
+
+            <div class="contact">
+                <h3>Notre moyen de contact</h3> <br>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:contact.pro.thebirdproduction@gmail.com">contact.pro.thebirdproduction@gmail.com</a> <br><br>
+                </p>
+            </div>
+            <div class="form">
+                <h3>Formulaire de contact</h3>
+                <form action="/contact/sendcontact" method="get">
+                    <input type="text" placeholder="Nom" name="name"> <br><br>
+                    <input type="email" placeholder="Email" name="email"> <br><br>
+                    <input type="text" placeholder="Sujet" name="subject"> <br><br>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea> <br><br>
+                    <input type="submit" value="Envoyer">
+
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+
+    </footer>
+    
+</body>
+</html>

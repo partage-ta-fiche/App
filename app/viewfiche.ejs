@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche <%= fichename %> | Partage ta Fiche</title>
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="./asset/img/Logo.png" />
+    <!-- JS IMPORT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.map"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="/asset/js/basicimport.js"></script>
+    <script src="/asset/js/counter.js"></script>
+    <!-- CSS IMPORT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/asset/css/nav.css">
+    <link rel="stylesheet" href="/asset/css/main.css">
+    <link rel="stylesheet" href="/asset/css/viewfiche.css">
+    <!-- CSS RESPONSIVE -->
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="/asset/css/mobile/m.viewfiche.css" />
+</head>
+<body>
+
+    <nav id="nav"></nav>
+
+
+    <section class="main">
+        <div class="titlem centered">
+
+            <h1>Fiche <%= fichename %> </h1>
+            <h2>Fait par <%= ficheusername %> </h2>
+
+
+        
+        </div>
+
+        <div class="flexbox">
+            <div class="fiche">
+
+                <a href="/store/img/fiches/<%= ficheid %>.png" target="blank"><img src="/store/img/fiches/<%= ficheid %>.png" alt="Fiche d'exemple"></a>
+
+            </div>
+
+            <div class="description">
+                <div class="description-content">
+                <h1>Description</h1>
+                <p><%= desc %></p>
+                    <br><br>
+                </div>
+                 <div class="account centered">
+                     <img src="/store/img/pp/<%= authorid %>.png" alt="Photo de profil de <%= ficheusername %> " class="pp">
+                     
+                     <h1><%= ficheusername %> </h1>
+                        <!-- <h2>Posté le ${date} </h2> -->
+                        <a href="/profile/view/?id=<%= authorid %> " class="viewmore">Voir plus de <%= ficheusername %> </a>
+
+
+
+
+                 </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+
+    <footer id="footer"></footer>
+
+    
+</body>
+</html>

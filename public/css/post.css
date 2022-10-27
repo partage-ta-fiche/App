@@ -1,0 +1,63 @@
+.post {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.upload {
+    width: 500px;
+    height: 600px;
+    border-radius: 25px;
+    background-color: #64B4DF;
+}
+
+.uploadfile {
+    margin-top: 20px;
+    background-color: #64B4DF;
+}
+.preview {
+    width: 50%;
+    height: 100%;
+    
+}
+.obj {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+
+    
+    
+}
+.send {
+    margin: 0 auto;
+    text-align: center;
+}
+.formdescription input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #64B4DF;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.formdescription textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: #64B4DF;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+   resize: none;
+    
+}
+#submit {
+    background-color: #DA7ADE; 
+}

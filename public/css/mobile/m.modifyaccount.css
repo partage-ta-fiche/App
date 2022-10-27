@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    gap: 35px;
+}
+.changement {
+    width: 85%;
+    height: auto;
+    font-size: 25px;
+    
+   
+    border: 5px solid #00bfff;
+    
+}
+.actual {
+    width: 85%;
+    height: auto;
+    font-size: 25px;
+    
+    
+   
+    border: 5px solid #00bfff;
+}

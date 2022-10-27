@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partage ta fiche | Admin </title>
+    <link rel="stylesheet" href="/asset/css/mainer.css">
+    <link rel="stylesheet" href="/asset/css/viewfiche.css">
+</head>
+<body>
+    
+    <div class="land"><img src="/asset/img/Logo.png" alt=""><h1>Partage ta fiche | Admin </h1></div>
+    <br><br><br><br>
+
+    
+    <br><br>
+
+    <section class="nav">
+        <div class="flexnav">
+            <div class="btnnav"><a href="/admin">Accueil</a></div>
+            <div class="btnnav"><a href="/admin/fiche">Modération Fiche</a></div>
+            <div class="btnnav"><a href="/admin/user">Utilisateurs</a></div>
+            <div class="btnnav"><a href="/admin/article">Article</a></div>
+            
+
+
+        </div>
+
+    </section>
+    <br><br><br><br>
+    <section>
+        <h1 class="center title">Modération des fiches</h1> <br><br>
+
+        <% fiche.forEach(fiche => { %>
+            <div class="cardfiche">
+                <h1><span>Titre de la fiche :</span> <%= fiche.title %> </h1>
+                <h1><span>Description : </span> <%= fiche.description %> </h1>
+                <h1><span>Autheur : </span> <%= fiche.author %> </h1>
+                <a href="/view/fiche/?ficheid=<%= fiche.id %> ">Voir</a>
+                <a href="/admin/fiche/delete/?id=<%= fiche.id %> ">Supprimer</a>
+            </div>
+            <br><br>
+
+         
+        <% }) %>
+
+        
+
+        <div class="cardfiche">
+            <h1><span>Titre de la fiche :</span> fichetitle</h1>
+            <h1><span>Description : </span> desc</h1>
+            <h1><span>Autheur : </span> author</h1>
+            <a href="">Voir</a>
+            <a href="">Supprimer</a>
+        </div>
+        <br><br>
+        <div class="cardfiche">
+            <h1><span>Titre de la fiche :</span> fichetitle</h1>
+            <h1><span>Description : </span> desc</h1>
+            <h1><span>Autheur : </span> author</h1>
+            <a href="">Voir</a>
+            <a href="">Supprimer</a>
+        </div>
+        <br><br>
+        <div class="cardfiche">
+            <h1><span>Titre de la fiche :</span> fichetitle</h1>
+            <h1><span>Description : </span> desc</h1>
+            <h1><span>Autheur : </span> author</h1>
+            <a href="">Voir</a>
+            <a href="">Supprimer</a>
+        </div>
+        <br><br>
+
+
+
+    </section>
+</body>
+</html>

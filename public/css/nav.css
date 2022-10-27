@@ -1,0 +1,46 @@
+@media screen and (max-width: 1200px) {
+   
+    #menu {
+        display: initial;
+    }
+    .navpc {
+        display: none;
+    }
+    
+
+    
+    
+}
+#menu {
+    display: none;
+}
+
+.navmobile {
+    display: none; 
+}
+.navpc  li {
+    display: inline;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto; 
+   
+}
+.navpc {
+    margin: 0 auto;
+    font-size: 40px;
+    
+}
+.navpc a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    margin: 0 auto;
+    margin-right: 75px ;
+    font-family: 'Pacifico', cursive;
+}
+.navpc a:hover {
+    color: #64B4DF;
+}
+
+/* Import Police  */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100&display=swap');
